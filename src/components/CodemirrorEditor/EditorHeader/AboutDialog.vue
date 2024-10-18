@@ -22,12 +22,6 @@ function onUpdate(val: boolean) {
   }
 }
 
-const links = [
-  { label: `GitHub 仓库`, url: `https://github.com/doocs/md` },
-  { label: `Gitee 仓库`, url: `https://gitee.com/doocs/md` },
-  { label: `GitCode 仓库`, url: `https://gitcode.com/doocs/md` },
-]
-
 function onRedirect(url: string) {
   window.open(url, `_blank`)
 }
@@ -42,6 +36,8 @@ function onRedirect(url: string) {
       <div class="text-center">
         <h3>一款高度简洁的微信 Markdown 编辑器</h3>
       </div>
+      <DialogFooter class="sm:justify-evenly">
+      </DialogFooter>
     </DialogContent>
   </Dialog>
 </template>
