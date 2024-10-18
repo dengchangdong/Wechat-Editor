@@ -2,7 +2,6 @@
 import {
   Dialog,
   DialogContent,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog'
@@ -21,10 +20,6 @@ function onUpdate(val: boolean) {
     emit(`close`)
   }
 }
-
-function onRedirect(url: string) {
-  window.open(url, `_blank`)
-}
 </script>
 
 <template>
@@ -36,8 +31,6 @@ function onRedirect(url: string) {
       <div class="text-center">
         <h3>一款高度简洁的微信 Markdown 编辑器</h3>
       </div>
-      <DialogFooter class="sm:justify-evenly">
-      </DialogFooter>
     </DialogContent>
   </Dialog>
 </template>
